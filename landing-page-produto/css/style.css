@@ -48,10 +48,12 @@ div.cabecalho-imagem-nome{
 }
 .cabecalho-menu{
     display: flex;
+    flex-direction: row;
     gap: 50px;
 }
 
 .cabecalho-menu-item{
+    padding-top: 2px;
     font-family: var(--fonte2);
     font-weight: 700;
     font-size: 17px;
@@ -68,4 +70,25 @@ div.cabecalho-imagem-nome{
 .botao-menu:hover{
     background-color: var(--cor4);
     color: var(--cor1);
+}
+.conteudo-principal-primario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+.conteudo-texto-imagem{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.imagem-principal{
+    height: 540px ;
+}
+.titulo{
+    color: var(--cor1);
+    font-family: var(--fonte1);
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.2;
 }
