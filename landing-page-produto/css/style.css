@@ -1,0 +1,71 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --fonte1: 'Oswald', sans-serif;
+    --fonte2: 'Poppins', sans-serif;
+    --cor1: #FFFFFF;
+    --cor2: #000000;
+    --cor3: #00BDDA;
+    --cor4: #008EA4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body.corpo{
+    font-size: 100%;
+    background-color: var(--cor3);
+}
+
+header.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0 80px;
+}
+div.cabecalho-imagem-nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.cabecalho-imagem{
+    height: 70px;
+}
+.nome-logo{
+    font-family: var(--fonte1);
+    font-weight: 700;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho-menu-item{
+    font-family: var(--fonte2);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+}
+.botao-menu{
+    width: 100px;
+    height: 35px;
+    padding-top: 30px 0;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.botao-menu:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
