@@ -29,7 +29,7 @@ header.cabecalho{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 25px 0 80px;
+    padding: 25px 0 50px;
 }
 div.cabecalho-imagem-nome{
     display: flex;
@@ -47,6 +47,8 @@ div.cabecalho-imagem-nome{
     font-variant: small-caps;
 }
 .cabecalho-menu{
+    position: relative;
+    top: 11px;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -61,6 +63,8 @@ div.cabecalho-imagem-nome{
     color: #000000;
 }
 .botao-menu{
+    position: relative;
+    bottom: 2px;
     width: 100px;
     height: 35px;
     padding-top: 30px 0;
@@ -71,16 +75,17 @@ div.cabecalho-imagem-nome{
     background-color: var(--cor4);
     color: var(--cor1);
 }
-.conteudo-principal-primario{
+.conteudo-principal{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;  
+    justify-content:space-around; 
 }
-.conteudo-texto-imagem{
-    width: 60%;
+.conteudo-texto-imagem-botao{
+    width: 53%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
+    padding-top: 70px;
 }
 .imagem-principal{
     height: 540px ;
@@ -89,6 +94,60 @@ div.cabecalho-imagem-nome{
     color: var(--cor1);
     font-family: var(--fonte1);
     font-size: 80px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
+}
+.descricao{
+    font-family: var(--fonte2);
+    font-weight: 600;
+    color: var(--cor2);
+    font-size: 19px;
+    line-height: 1.8;
+    width: 700px;
+}
+.botao-baixar{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.botao-primario{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 230px;
+    height: 60px;
+    background-color: var(--cor2);
+    border-radius: 10px;
+}
+.nome-botao{
+    font-family: var(--fonte2);
+    color: var(--cor1);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-right: 20px;
+
+}
+.icone{
+    width: 25px;
+}
+.botao-primario:hover{
+    background-color: var(--cor4);
+}
+.classificacao-app{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    
+}
+.numero{
+    font-family: var(--fonte2);
+    font-size: 25px;
+    font-weight: 600;
+}
+.classificacao-img{
+    position: relative;
+    left: 20px;
+    top: 2px;
+    width: 155px;
 }
