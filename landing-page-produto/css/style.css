@@ -13,7 +13,7 @@
     --cor4: #008EA4;
 }
 
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -179,4 +179,14 @@
     left: 20px;
     top: 2px;
     width: 155px;
+}
+
+.msg{
+    text-align: center;
+    background-color: var(--cor1);
+    padding: 5px;
+    font-family: var(--fonte2);
+    font-size: 18px;
+    color: var(--cor2);
+    font-weight: 700;
 }
