@@ -19,33 +19,38 @@
     box-sizing: border-box;
     border: none;
 }
-body.corpo{
+
+.corpo-site{
     font-size: 100%;
     background-color: var(--cor3);
 }
 
-header.cabecalho{
+.cabecalho{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 25px 0 50px;
 }
-div.cabecalho-imagem-nome{
+
+.cabecalho-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
-.cabecalho-imagem{
+
+.cabecalho-imagem-logo{
     height: 70px;
 }
-.nome-logo{
+
+.cabecalho-nome-logo{
     font-family: var(--fonte1);
     font-weight: 700;
     font-size: 40px;
     font-variant: small-caps;
 }
+
 .cabecalho-menu{
     position: relative;
     top: 11px;
@@ -62,6 +67,11 @@ div.cabecalho-imagem-nome{
     text-decoration: none;
     color: #000000;
 }
+
+.cabecalho-menu-item:hover{
+    color: var(--cor1);
+}
+
 .botao-menu{
     position: relative;
     bottom: 2px;
@@ -71,33 +81,39 @@ div.cabecalho-imagem-nome{
     border-radius: 10px;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
 }
+
 .botao-menu:hover{
     background-color: var(--cor4);
     color: var(--cor1);
 }
+
 .conteudo-principal{
     display: flex;
     flex-direction: row;
     justify-content:space-around; 
 }
-.conteudo-texto-imagem-botao{
+
+.conteudo-principal-primario{
     width: 53%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding-top: 70px;
 }
+
 .imagem-principal{
     height: 540px ;
 }
-.titulo{
+
+.conteudo-titulo{
     color: var(--cor1);
     font-family: var(--fonte1);
     font-size: 80px;
     font-weight: 500;
     line-height: 1.2;
 }
-.descricao{
+
+.conteudo-descricao{
     font-family: var(--fonte2);
     font-weight: 600;
     color: var(--cor2);
@@ -105,13 +121,15 @@ div.cabecalho-imagem-nome{
     line-height: 1.8;
     width: 700px;
 }
-.botao-baixar{
+
+.botao-principal{
     display: flex;
     flex-direction: row;
     gap: 30px;
     align-items: center;
 }
-.botao-primario{
+
+.botao-baixar-app{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
@@ -120,6 +138,7 @@ div.cabecalho-imagem-nome{
     background-color: var(--cor2);
     border-radius: 10px;
 }
+
 .nome-botao{
     font-family: var(--fonte2);
     color: var(--cor1);
@@ -128,24 +147,29 @@ div.cabecalho-imagem-nome{
     padding-right: 20px;
 
 }
-.icone{
+
+.icone-botao{
     width: 25px;
 }
-.botao-primario:hover{
+
+.botao-baixar-app:hover{
     background-color: var(--cor4);
 }
-.classificacao-app{
+
+.classificar-app{
     display: flex;
     flex-direction: row;
     gap: 70px;
     
 }
-.numero{
+
+.numero-classificacao{
     font-family: var(--fonte2);
     font-size: 25px;
     font-weight: 600;
 }
-.classificacao-img{
+
+.imagem-estrela{
     position: relative;
     left: 20px;
     top: 2px;
