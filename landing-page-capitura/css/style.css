@@ -155,6 +155,7 @@
     url("../img/hrz-1.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -245,6 +246,7 @@
     url("../img/hrz-1.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,6 +266,7 @@
     font-size: 1.2em;
     border-radius: 10px;
 }
+
 /* Rodape */
 .rodape{
     text-align: center;

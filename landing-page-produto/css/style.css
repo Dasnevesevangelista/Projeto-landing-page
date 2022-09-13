@@ -30,14 +30,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 25px 0 50px;
+    padding-top: 10px;
 }
 
 .cabecalho-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 0.2em;
+    padding-left: 65px;
 }
 
 .cabecalho-imagem-logo{
@@ -47,25 +48,23 @@
 .cabecalho-nome-logo{
     font-family: var(--fonte1);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 3em;
     font-variant: small-caps;
 }
 
 .cabecalho-menu{
-    position: relative;
-    top: 11px;
+    padding-top: 1.2em;
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
 .cabecalho-menu-item{
-    padding-top: 2px;
     font-family: var(--fonte2);
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.2em;
     text-decoration: none;
-    color: #000000;
+    color: var(--cor2);
 }
 
 .cabecalho-menu-item:hover{
@@ -94,7 +93,7 @@
 }
 
 .conteudo-principal-primario{
-    width: 53%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -102,13 +101,14 @@
 }
 
 .imagem-principal{
-    height: 540px ;
+    padding-top: 35px;
+    height: 570px ;
 }
 
 .conteudo-titulo{
     color: var(--cor1);
     font-family: var(--fonte1);
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 500;
     line-height: 1.2;
 }
