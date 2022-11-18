@@ -1,0 +1,122 @@
+@charset "utf-08";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family= Josefin +Sans:wght@200;400;500;600;700 & display=swap');
+
+.main{
+  background-color: darkgray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  min-width: 300px;
+  height: 410px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #373435
+}
+
+.titulo{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(238, 232, 232, 0.767);
+}
+
+.display{
+  width: 100%;
+  height: 60px;
+  border: 3px solid #eee8e8c4;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 40px;
+  padding: 5px;
+  color: #fff;
+}
+
+.display:hover{
+  background-color: #1d1a1ac4;
+}
+
+.botoes{
+  height: 280px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+  "btn1 btn2 btn3 btn4"
+  "btn5 btn6 btn7 btn8"
+  "btn9 btn10 btn11 btn12"
+  "btn13 btn14 btn15 btn16"
+  "btn17 btn17 btn18 btn19";
+  padding: 10px 0;
+  gap: 5px;
+}
+
+.btn{
+ background-color: transparent;
+ border: 3px solid #eee8e8c4;
+ border-radius: 5px;
+ color: #eee8e8c4;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 20px;
+ font-weight: 600;
+ cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #1d1a1ac4
+}
+
+.btn1{
+  grid-area: btn1;
+}.btn2{
+  grid-area: btn2;
+}.btn3{
+  grid-area: btn3;
+}.btn4{
+  grid-area: btn4;
+}.btn5{
+  grid-area: btn5;
+}.btn6{
+  grid-area: btn6;
+}.btn7{
+  grid-area: btn7;
+}.btn8{
+  grid-area: btn8;
+}.btn9{
+  grid-area: btn9;
+}.btn10{
+  grid-area: btn10;
+}.btn11{
+  grid-area: btn11;
+}.btn12{
+  grid-area: btn12;
+}.btn13{
+  grid-area: btn13;
+}.btn14{
+  grid-area: btn14;
+}.btn15{
+  grid-area: btn15;
+}.btn16{
+  grid-area: btn16;
+}.btn17{
+  grid-area: btn17;
+}.btn18{
+  grid-area: btn18;
+}.btn19{
+  grid-area: btn19;
+}
