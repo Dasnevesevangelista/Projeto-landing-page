@@ -1,0 +1,621 @@
+@charset 'utf-08';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-titulo: 'Montserrat', sans-serif;
+  --cor-fundo: #0B1320;
+  --cor-subtitulo: #CD5200;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-titulo);
+  color: var(--cor-fundo);
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content:space-between;
+  padding: 0 5em;
+  align-items: center;
+  background-color: var(--cor-fundo);
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-title{
+  font-family: var(--font-titulo);
+  font-size: 4.4em;
+  font-weight: 400;
+  color: white;
+  line-height: 0.8;
+}
+
+.main-description{
+  font-family: var(--font-titulo);
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+}
+
+.btn{
+  width: 130px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  font-family: var(--font-titulo);
+  font-size: 0.9em;
+  background-color: #1C3F60;
+  color: white;
+  border: none;
+}
+
+.header img{
+  width: 410px;
+  padding-top: 25px;
+}
+
+.destaque{
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+    to top right,
+    rgba(28, 29, 29, 0.705),
+    rgba(27, 29, 28, 0.747)
+  ), url("../img/teclado2.jpg"); 
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.section-title{
+  width: 45rem;
+  font-family: var(--font-titulo);
+  font-size: 2.6em;
+  font-weight: 400;
+  color: white;
+  padding: 1.3em 0 0 1.9em;
+}
+
+.section-title-2{
+  width: 100%;
+  text-align: right;
+  padding: 5em 4.5em 0 0;
+}
+
+.about{
+  width: 100%;
+  height: 40vh;
+  background-color: var(--cor-fundo);
+}
+
+.description-about{
+  width: 35em;
+  padding: 3em 0 0 4.5em;
+  font-family: var(--font-titulo);
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: justify;
+  color: white;
+}
+
+.my-work{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--cor-fundo);
+  padding: 0 10em;
+}
+
+.work-title{
+  font-family: var(--font-titulo);
+  font-size: 2.6em;
+  font-weight: 400;
+  color: white;
+  margin:  -30px 0 0 -80px;
+}
+
+.services img{
+  width: 310px;
+  height: 430px;
+}
+
+.job{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 40px;
+}
+
+.job-subtitle{
+  font-family: var(--font-titulo);
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--cor-subtitulo);
+}
+
+.job-list{
+  padding: 20px 0 0 60px;
+}
+
+.job-list li{
+  font-family: var(--font-titulo);
+  font-weight: 300;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.depoimentos{
+  width: 100%;
+  height: 60vh;
+  background-color: var(--cor-fundo);
+}
+
+.testemunho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 6em;
+}
+
+.box h3{
+  font-family: var(--font-titulo);
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px 0 15px 0;
+  border-top: 2px solid white;
+  color: #CD5200;
+}
+
+.box p{
+  color: white;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 1.3px;
+}
+
+.rodape{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-fundo);
+  padding: 0 10em;
+}
+
+.title-rodape{
+  width: 60%;
+  position: relative;
+  font-family: var(--font-titulo);
+  font-size: 2.6em;
+  font-weight: 400;
+  color: white;
+  right: 80px;
+  top: 20px;  
+}
+
+.rodape-img img {
+  width: 300px;
+  height: 400px;
+}
+
+#title-contatos{
+  font-family: var(--font-titulo);
+  font-size: 25px;
+  font-weight: 400;
+  color: #CD5200;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+.contato{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-contato h3 {
+  font-family: var(--font-titulo);
+  font-size: 15px;
+  font-weight: 300;
+  color: #CD5200;
+  padding-bottom: 15px;
+}
+
+.content-contato p {
+  font-family: var(--cor-fundo);
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.social{
+  display: flex;
+  gap: 20px;
+}
+
+.social h3{
+  font-family: var(--font-titulo);
+  font-size: 15px;
+  font-weight: 300;
+  color: #CD5200;
+}
+
+.social-img{
+  width: 30px;
+  filter: invert(75%);
+}
+
+@media (max-width: 1210px){
+  .main-title{
+    font-size: 3.5em;
+  }
+  .main-description{
+    font-size: 1.6em;
+  }
+  .header img{
+    width: 300px;
+    padding-top: 25px;
+  }
+  .depoimentos{
+    width: 100%;
+    height: 80vh;
+  }
+  .test3{
+    margin-bottom: 28px;
+  }
+
+  .rodape{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6em;
+  }
+  .title-rodape{
+    width: 60%;
+    position: relative;
+    font-size: 2.3em;
+    right: 30px;
+    top: 20px;  
+  }
+  
+}
+
+@media (max-width: 970px){
+  .main-title{
+    font-size: 2.4em;
+  }
+  .main-description{
+    font-size: 1.2em;
+  }
+  .header img{
+    width: 240px;
+    padding-top: 25px;
+  }
+  .section-title{
+    width: 35rem;
+    font-size: 2em;
+  }
+  .about{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--cor-fundo);
+  }
+  .my-work{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 150px;
+    padding: 0 6em;
+  }
+  .work-title{
+    font-size: 2em;
+    margin:  -30px 0 0 -30px;
+  }
+  .services img{
+    width: 240px;
+    height: 330px;
+  }
+  .job{
+    padding-top: 20px;
+  }
+  .job-subtitle{
+    font-size: 1em;
+  }
+  .job-list{
+    padding: 20px 0 0 60px;
+  }
+  
+  .job-list li{
+    font-size: 0.8em;
+    padding-bottom: 7px;
+  }  
+  .section-title-2{
+    width: 100%;
+    padding: 7em 2em 0 0;
+  }
+
+  .rodape{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em;
+  }
+  .rodape-img img {
+    width: 240px;
+    height: 330px;
+  }
+  .title-rodape{
+    width: 410px;
+    margin-top: -65px;
+  }
+  #title-contatos{
+    font-size: 23px;
+  }
+  .contato{
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .title-contato h3 {
+    font-size: 13px;
+  }
+  
+  .content-contato p {
+    font-size: 12px;
+  }
+  .social{
+    display: flex;
+    gap: 20px;
+  }
+  .social h3{
+    font-size: 13px;
+  }
+  .social-img{
+    width: 20px;
+  }
+}
+
+@media (max-width: 770px){
+  .depoimentos{
+    height: 60vh;
+  }
+  .testemunho{
+    gap: 60px;
+    padding: 7em 3em 0;
+  }
+  .box h3{
+    font-size: 1em;
+  }
+  .box p{
+    font-size: 0.8em;
+  }  
+  .box-title{
+    margin-top: 8px;
+  }
+  .rodape{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+    
+  }
+  .title-rodape{
+    width: 100%;
+    position: relative;
+    font-size: 1.7em;
+    right: 15px;
+    top: 20px;  
+  }
+}
+
+@media (max-width: 743px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    order: 2;
+  }
+  .main-title{
+    font-size: 1.9em;
+  }
+  .main-description{
+    font-size: 1.3em;
+  }
+  .header img{
+    width: 260px;
+    order: 1;
+  }
+  .destaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-title{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0;
+  }
+  .about{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--cor-fundo);
+  }
+  .description-about{
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    text-align: center;
+    padding: 50px 20px 0 20px;
+  }
+  .my-work{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    order: 1;
+  }
+  .job{
+    order: 2;
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .work-title{
+    font-family: var(--font-titulo);
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+    order: 1;
+  } 
+  .services img{
+    width: 220px;
+    height: 320px;
+    order: 2;
+  }
+  .listas{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 80px;
+  }
+  .job-subtitle{
+    font-size: 1em;
+  }
+  .job-list{
+    padding: 20px 0 0 20px;
+  }
+  
+  .job-list li{
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    padding-bottom: 5px;
+    color: white;
+  }
+  .depoimentos{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--cor-fundo);
+  }
+  .testemunho{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    gap: 30px;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .box h3{
+    font-size: 1.1em;
+  }
+  
+  .box p{
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+  }
+  .rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 10em;
+  }
+  
+  .title-rodape{
+    width: 100%;
+    font-size: 1.7em;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  
+  .rodape-img img {
+    width: 300px;
+    height: 400px;
+  }
+  
+  #title-contatos{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .contato{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .title-contato h3 {
+    font-family: var(--font-titulo);
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #CD5200;
+    padding-bottom: 15px;
+  }
+  
+  .content-contato p {
+    font-family: var(--cor-fundo);
+    font-size: 0.9em;
+    font-weight: 300;
+    color: white;
+    padding-bottom: 15px;
+  }
+  
+  .social{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social h3{
+    font-family: var(--font-titulo);
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #CD5200;
+  }
+  
+  .social-img{
+    width: 18px;
+    filter: invert(75%);
+  }
+}
