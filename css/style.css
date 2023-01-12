@@ -47,19 +47,24 @@ body{
     font-size: 18px;
 }
 .contents{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-top: 0.4px solid var(--cor1);
 }
 .main-content{
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
+    padding: 0 90px;
+}
+.saudacao{
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 1.3em;
+    color: rgba(36, 35, 35, 0.945)
 }
 .main-description{
     display: flex;
@@ -69,14 +74,14 @@ body{
 .main-title{
     font-family: var(--fonte1);
     font-weight: 400;
-    font-size: 64px;
+    font-size: 3.3em;
     color: var(--cor1);
 }
 
-.main-subtitle, .saudacao{
+.main-subtitle{
     font-family: var(--fonte2);
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 2em;
     color: rgba(36, 35, 35, 0.945)
 }
 .btn{
@@ -94,53 +99,51 @@ body{
     font-size: 16px;
     color: var(--cor_botao);
     cursor: pointer;
-
 }
 .main-btn:hover{
     background-color: var(--cor_gradiente2);
     color: var(--cor1);
 }
 .img-principal{
-    height: 350px
+    height: 320px
 }
 
-.sobre{
-    font-family: var(--fonte1);
-    font-size: 30px;
-    border-bottom: 2px solid white;
+.portifolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.portifolio h3{
+    font-family: var(--fonte2);
+    font-weight: 400;
+    font-size: 1.8em;
+    color: rgba(36, 35, 35, 0.945);
+    padding-bottom: 20px;
+}
+
+.link{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+ul li{
+   list-style: none;
+   padding: 10px 0;
+}
+
+li a {
+    font-family: var(--fonte2);
+    text-decoration: none;
     color: white;
 }
 
 
-.protetos {
-    height: 50vh;
-    background-color: white;
-    padding: 10px;
-}
-
-.protetos>ul {
-    list-style-type: "\2714\00a0\00a0";
-    list-style-position: inside;
-    columns: 2;
-}
-
-.protetos ul li a {
-    padding-bottom: 10px;
-}
-
-.protetos h3 {
-    font-family: var(--fonte1);
-    font-size: 1.8em;
-    color: var(--cor_botao);
-    font-weight: 400;
-}
-
-
-
-
-
 .rodape{
-    padding: 32px;
+    padding: 10px;
     border-top: 0.4px solid var(--cor1);
 }
 .rodape-nome{
