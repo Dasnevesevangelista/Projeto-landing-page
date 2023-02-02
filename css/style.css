@@ -97,10 +97,12 @@ body{
     font-size: 16px;
     color: var(--cor_botao);
     cursor: pointer;
+    transition: 0.5s;
 }
 .main-btn:hover{
     background-color: var(--cor_gradiente2);
     color: var(--cor1);
+    border-color: var(--cor1);
 }
 .img-principal{
     height: 320px
