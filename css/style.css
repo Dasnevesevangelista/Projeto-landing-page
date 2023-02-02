@@ -19,11 +19,10 @@
     --cor_gradiente2: #36739b;
 }
 body{
-    font-size: 100%;
     background-image:  linear-gradient(to right, var(--cor_gradiente2), var(--cor_gradiente1));
 }
 .cabecalho{
-    width: 100vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
